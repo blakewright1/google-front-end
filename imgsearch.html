@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .nav-bar {
+        display: flex;
+        justify-content: space-around;
+      }
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+      a:hover {
+        color: pink;
+      }
+      h1 {
+        display: flex;
+        justify-content: center;
+        color: red;
+        font-size: 500%;
+        margin-top: 10rem;
+        margin-bottom: 0rem;
+      }
+      h5 {
+        display: flex;
+        justify-content: center;
+        color: blue;
+        margin-top: 0rem;
+        font-size: 125%;
+      }
+      #text-box {
+        display: flex;
+        justify-content: center;
+      }
+      #text-box input {
+        width: 50vw;
+      }
+      #sub-btn {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <a href="index.html">Basic Search</a>
+      <a href="advancedsearch.html">Advanced Search</a>
+    </div>
+    <h1>Google</h1>
+    <h5>Images</h5>
+    <form action="https://www.google.com/search" name="f">
+      <div id="text-box">
+        <input type="text" name="q" />
+      </div>
+      <div id="sub-btn">
+        <input type="submit" value="Image Search" />
+      </div>
+
+      <div id="hidden">
+        <input name="safe" value="strict" type="hidden" />
+        <input name="safe" value="strict" type="hidden" /><input
+          name="hl"
+          value="en"
+          type="hidden"
+        /><input name="authuser" value="0" type="hidden" /><input
+          name="tbm"
+          value="isch"
+          type="hidden"
+        /><input
+          name="sxsrf"
+          value="ALeKk01ZEG-EjIYGk3uArepwm5ES-7-MNg:1595700229779"
+          type="hidden"
+        /><input name="source" type="hidden" value="hp" /><input
+          name="biw"
+          type="hidden"
+          value="725"
+        /><input name="bih" type="hidden" value="610" /><input
+          value="BXQcX__uLK24gge064bwAg"
+          name="ei"
+          type="hidden"
+        />
+        <input
+          value="AINFCbYAAAAAXxyCFQtuYqbO-5FXFbM1ouBBb0InQ3QO"
+          disabled="true"
+          name="iflsig"
+          type="hidden"
+        />
+      </div>
+    </form>
+  </body>
+</html>

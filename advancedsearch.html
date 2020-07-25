@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .nav-bar {
+        display: flex;
+        justify-content: space-around;
+      }
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+      a:hover {
+        color: pink;
+      }
+      h2 {
+        color: green;
+        margin-bottom: 50px;
+        font-size: 220%;
+      }
+      table {
+        margin: 20px;
+      }
+      th {
+        text-align: left;
+      }
+      td input {
+        width: 38vw;
+        height: 1.5rem;
+      }
+      .submit-btn {
+        width: 50%;
+        float: right;
+      }
+      p {
+        font-size: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <a href="index.html">Basic Search</a>
+      <a href="imgsearch.html">Image Search</a>
+    </div>
+
+    <h2>Advanced Search</h2>
+
+    <form action="https://google.com/search">
+      <table>
+        <tr>
+          <th>Find pages with...</th>
+          <th></th>
+          <th>To do this in the search box</th>
+        </tr>
+        <tr>
+          <td><label for="all">all these words:</label></td>
+          <td>
+            <input type="text" id="all" name="as_q" autofocus="autofocus" />
+          </td>
+          <td>
+            <p>Type the important words: <i>tricolor rat terrier</i></p>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="exact">this exact word or phrase:</label></td>
+          <td><input type="text" id="exact" name="as_epq" /></td>
+          <td><p>Put exact words in quotes: "rat terrier"</p></td>
+        </tr>
+        <tr>
+          <td><label for="any">any of these words:</label></td>
+          <td><input type="text" id="any" name="as_oq" /></td>
+          <td>
+            <p>Type OR between all the words you want: miniature OR standard</p>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="none">none of these words:</label></td>
+          <td><input type="text" id="none" name="as_eq" /></td>
+          <td>
+            <p>
+              Put a minus sign just before words you don't want: -rodent, -"Jack
+              Russell"
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input class="submit-btn" type="submit" value="Advanced Search" />
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
